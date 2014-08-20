@@ -1,0 +1,162 @@
+body {    
+}
+
+.main {
+    /* The background image below was used as a template for tracing */
+    <!--background: 
+    url(http://cnet3.cbsistatic.com/hub/i/2011/03/16/40ef154a-f0f6-11e2-8c7c-d4ae52e62bcc/94728c71469b8e79d80873bf7ffefd0c/Chrome-logo-2011-03-16.jpg) no-repeat;-->
+    height: 375px;
+    width: 375px;
+    position: absolute;
+    top:50px;
+    left:50px;
+}
+
+.logo {
+    position: relative;
+    top: 8px;
+    left: 8px;
+}
+
+.logo>div {
+    position: absolute;
+}
+
+.lead {
+    height: 160px;
+    width: 100px;
+    z-index:2;
+}
+
+.follow {
+    height: 147px;
+    width: 145px;
+    z-index: 0;
+}
+
+.logo .red-fan,
+.logo .yellow-fan,
+.logo .green-fan {
+    height: 220px;
+    width: 350px;
+}
+
+.red-fan>div,
+.yellow-fan>div,
+.green-fan>div {
+    position: relative;
+}
+
+/* Red fan styling */
+.red-fan .lead,
+.red-fan .follow {
+    background-color: rgba(213, 15, 37, .9);
+}
+
+.red-fan .lead {
+    top: 37px;
+    left: 68px;
+    transform: rotate(-30deg);
+}
+
+.red-fan .follow {
+    top: -166px;
+    left: 158px;
+    transform: rotate(-30deg) skew(0deg, 16deg);
+}
+
+/* Yellow fan styling */
+.yellow-fan .lead,
+.yellow-fan .follow {
+    background-color: rgba(238, 178, 17, .9);
+}
+
+.yellow-fan {
+    top: 102px;
+    left: 80px;
+    transform: rotate(120deg);
+}
+
+.yellow-fan .lead {
+    top: 37px;
+    left: 68px;
+    transform: rotate(-30deg);
+}
+
+.yellow-fan .follow {
+    top: -166px;
+    left: 158px;
+    transform: rotate(-30deg) skew(0deg, 16deg);
+}
+
+/* Green fan styling */
+.green-fan .lead,
+.green-fan .follow {
+    background-color: rgba(0, 153, 37, .9);
+}
+
+.green-fan {
+    top: 119px;
+    left: -49px;
+    transform: rotate(239deg);
+}
+
+.green-fan .lead {
+    top: 37px;
+    left: 68px;
+    transform: rotate(-30deg);
+    background-color: rgba(0, 153, 37, .9);
+}
+
+.green-fan .follow {
+    top: -166px;
+    left: 158px;
+    transform: rotate(-30deg) skew(0deg, 16deg);
+    background-color: rgba(0, 153, 37, .9);
+}
+
+/* Inner mask and blue circle */
+.inner-mask {
+    height: 150px;
+    width: 150px;    
+    background-color: white;
+    border-radius: 50%;
+    top: 108px;
+    left: 110px;  
+    z-index: 3;
+}
+
+.blue-circle {
+    height: 128px;
+    width: 128px;    
+    background-color: rgba(51, 105, 232, 1);
+    border-radius: 50%;
+    top: 120px;
+    left: 121px;    
+    z-index: 4;
+}
+
+/* Outer mask */
+.outer-mask {
+    height: 339px;
+    width: 339px;
+    top: -66px;
+    left: -65px;
+    background-color: transparent;
+    border: 80px solid white;
+    border-radius: 50%;
+    z-index: 5;
+}
+
+/* Gradient template */
+.gradient-template {
+    height: 339px;
+    width: 339px;
+    top: -66px;
+    left: -65px;
+    background-color: transparent;
+    margin: 80px;
+    border-radius: 50%;
+    z-index: 6;
+    background: radial-gradient(circle at top, rgba(255, 255, 255, 0.2), transparent);
+    box-shadow: inset 0px 0 50px rgba(0, 0, 0, .2);
